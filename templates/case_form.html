@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block body %}
+    {% if user.is_authenticated %}
+    <div class="row justify-content-center">
+        <div class="col">
+            <br>
+            <div style="position: static">
+                <h1 class="mt-2 text-dark">Upload Your Personal Project</h1>
+                <hr class="mt-1 mb-4 ">
+            </div>
+            <div class="content-background">
+                <form method="POST" enctype="multipart/form-data" class = "form">
+                    <p class="note">* Note: you can only upload your personal project once, but you can update it later on.</p>
+                    {% csrf_token %}
+                    {{form|crispy}}
+                    <button type="submit" class="btn btn-primary button">Post</button>
+                </form>
+            </div>
+            <br>
+            <hr class="mt-3 mb-4 ">
+        </div>
+    </div>
+    {% endif %}
+{% endblock body %}
