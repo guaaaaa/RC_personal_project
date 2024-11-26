@@ -1,0 +1,147 @@
+body {
+    
+    /*background-color: #eaeaea;*/
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+#jumbotron{
+    background-color: rgb(220,220,220);
+}
+
+.background { 
+    background-image: url("https://bbk12e1-cdn.myschoolcdn.com/ftpimages/180/list/large_list101435_22815.jpeg");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+#page-container {
+    height: 10%;
+    width: auto;
+}
+
+#outsideNav{
+    background-color: #333;
+}
+
+
+#logo {
+    height: 65px;
+    width: auto;
+}
+
+#link {
+    color: white;
+    margin-left: 20px;
+}
+
+.content-background {
+    background-color: rgba(205, 205, 205, 0.9);
+    position: relative;
+    left: 5%;
+    right: 5%;
+    padding: 15px;
+    width: 90%;
+    border: none;
+    border-radius: 30px;
+}
+
+.note {
+    color: red;
+}
+
+.title{
+    text-align: center;
+}
+
+.button{
+	text-transform: uppercase;
+	display: inline-block;
+	margin: 5px auto;
+	width: 94%;
+	padding: 15px 0;
+	border: none;
+	border-radius: 5px;
+	background-color: rgba(200, 100, 0, 0.8);
+	cursor: pointer;
+}
+
+#footer {
+    position: relative;
+    bottom: 0%;
+    width: max-content;
+    display:flex;
+    flex-direction: row;
+    height: 70px;
+    vertical-align: center;
+    width: 100%;
+}
+
+#case_jumbotron {
+    display: flex;
+    background-color: rgb(10, 136, 136);
+    width: 400px;
+    height: 300px;
+}
+
+#case_link{
+    display: flex;
+    color: white;
+    position: fixed;
+}
+
+#user {
+    position: absolute;
+    float: right;
+    right: 2%;
+    color: white;
+}
+
+#email{
+    color: white;
+}
+
+
+#div_id_username,#div_id_email,#div_id_password1,#div_id_password2, #div_id_password,#div_id_passwor_reset,#div_hr {
+	margin: 10px 20px;
+    padding: 3px 10px;
+    
+}
+/*
+#id_username,#id_email,#id_password1,#id_password2 {
+    display: block;
+	width: 100%;
+	border: none;
+	border-radius: 5px;
+	background: none;
+	font-size: 15px;
+	outline: none;
+}
+
+
+#div_id_project_name,#div_id_description,#div_id_goal,#div_id_cover_image,#div_id_image1  {
+    border: 1px solid grey;
+	margin: 30px 60px;
+	padding: 3px 10px;
+	border-radius: 7px;
+}
+
+
+#id_project_name,#id_description {
+    display: block;
+	width: 100%;
+	border: none;
+	border-radius: 5px;
+	background: none;
+	font-size: 15px;
+	outline: none;
+} */
+

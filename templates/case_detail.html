@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container">
+    <br>
+    <div class="jumbotron">
+
+        <h1>Project: {{case.project_name}}</h1>
+        <h4>Made by {{user.username}}</h4>
+        <hr>
+
+        <p>Description: {{case.description}}</p>
+        <br>
+        <p>Goal: {{case.goal}}</p>
+        <img src="{{case.cover_image.url}}">
+        {% if case.image1 %}
+            <img src="{{case.image1.url}}">
+        {% endif %}
+        {% if case.image2 %}
+            <img src="{{case.image2.url}}">
+        {% endif %}
+        {% if case.image3 %}
+            <img src="{{case.image3.url}}">
+        {% endif %}
+        {% if case.image4 %}
+            <img src="{{case.image4.url}}">
+        {% endif %}
+
+        {% if case.audio %}
+            <audio controls>
+            <source src="{{case.audio.url}}">
+            Your browser does not support the audio element.
+            </audio>
+        {% endif %}
+
+        {% if case.video %}
+            <video width="320" height="240" controls>
+            <source src="{{case.video.url}}">
+            </video>
+        {% endif %}
+
+        {% if case.document %}
+        {% endif %}
+
+        <hr>
+        <a class="btn btn-primary btn-lg button" href="{% url 'ag:case_list' %}" role="button">Back</a>
+    </div>
+</div>
+
+
+
+{% endblock body %}

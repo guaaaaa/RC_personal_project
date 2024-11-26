@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block body %}
+    {% if user.is_authenticated %}
+    <div class="row justify-content-center">
+        <div class="col">
+            <br>
+            <div style="position: static">
+                <h1 class="mt-2 text-dark">Update Your Personal Project</h1>
+                <hr class="mt-1 mb-4 ">
+            <div class="content-background">
+                <form method="POST" enctype="multipart/form-data" class = "form" id="form">
+                    {% csrf_token %}
+                    {{form|crispy}}
+                    <button type="submit" class="btn btn-primary button">Update</button>
+                </form>
+            </div>
+            <br>
+            <hr class="mt-3 mb-4 ">
+        </div>
+    </div>
+    {% endif %}
+{% endblock body %}
